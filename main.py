@@ -29,10 +29,13 @@ def find_mismatch(text):
         return opening_brackets_stack[-1].position + 1
 
 def main():
+    type = input()
     text = input()
-    mismatch = find_mismatch(text)
-    print(mismatch)
-
+    if type == 'I/r':
+        mismatch = find_mismatch(text)
+        print(mismatch)
+    else:
+        print('Incorrect type of input')
 
 if __name__ == "__main__":
     main()
