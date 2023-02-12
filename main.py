@@ -22,7 +22,7 @@ def find_mismatch(text):
             else:
                 return i + 1       
         pass    
-     if opening_brackets_stack == 0 or result == 0:
+    if opening_brackets_stack == 0 or result == 0:
         return 'Success'    
     else:
         return opening_brackets_stack[-1].position + 1
@@ -31,7 +31,6 @@ def main():
     text = input()
     mismatch = find_mismatch(text)
     print(mismatch)
-
 
 if __name__ == "__main__":
     main()
