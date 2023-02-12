@@ -21,7 +21,7 @@ def find_mismatch(text):
                 return 1
             # Check, if not empty 
             elif result > 0 and are_matching(opening_brackets_stack[result - 1].char, next):
-                opening_brackets_stack.pop()
+                del opening_brackets_stack[-1]
                 result = result - 1
             else:
                 return i + 1
