@@ -30,8 +30,8 @@ def find_mismatch(text):
 
 def main():
     type = input()
-    text = input()
     if type == 'I/n/r':
+        text = input()
         mismatch = find_mismatch(text)
         print(mismatch)
     else:
