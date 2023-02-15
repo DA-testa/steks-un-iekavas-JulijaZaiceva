@@ -31,7 +31,7 @@ def find_mismatch(text):
 def main():
     type = input()
     text = input()
-    if type == 'I/r':
+    if type == 'I/n/r':
         mismatch = find_mismatch(text)
         print(mismatch)
     else:
