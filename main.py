@@ -29,9 +29,9 @@ def find_mismatch(text):
         return opening_brackets_stack[-1].position + 1
 
 def main():
-    type = input()
-    if type == 'I/n/r':
-        text = input()
+    txt = input()
+    if txt[0] == 'I':
+        txt = input()
         mismatch = find_mismatch(text)
         print(mismatch)
     else:
